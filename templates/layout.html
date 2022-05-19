@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Leading the way</title>
+
+  {% block styles %}
+  <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+  {% endblock %}
+</head>
+<body>
+  <header>
+    <div class="topnav">
+      <a class="active" href="/">home.</a>
+      <a href="/news">news.</a>
+      <a href="/about">about.</a>
+      <a href="/contact">contact.</a>
+      <a href="/signup">get involved.</a>
+    </div>
+  </header>
+
+  <main role="main" class="container">
+  {% block content %}
+  {% endblock %}
+
+  <div class="footer">
+       <h3>let's keep in touch</h3>
+      <p><a href="https://www.instagram.com/bel.amalia.m/?hl=en">
+      <img src="../assets/instagramlogo.jpg" alt="instagram.com" width="20" height="20">
+      </a></p>
+      </div>
+
+  <script src="script.js"></script>
+  {% block scripts %}
+  {% endblock %}
+</body>
+</html>

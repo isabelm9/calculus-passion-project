@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+<!doctype html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Leading the way</title>
+
+    {% block styles %}
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    {% endblock %}
+
+  </head>
+  <body>
+    {% block scripts %}
+    <script src="static/js/script.js"></script>
+    {% endblock %}
+
+{% block content %}
+<div class="index-img">
+  <img src="assets/online.webp" alt="Online" style="width:100%;">
+  <div class="text-block">
+    <h4>online learning was difficult</h4>
+    <p>together we can help children catch up</p>
+      <p>both academically and socially.</p>
+  </div>
+</div>
+
+    <br>
+
+    <div class="header">
+      <h1 style="font-family:verdana">leading the way.</h1>
+      <p>older students can help and support the younger students grow and develop the skills they could not during the pandemic. through the pandemic there have been studies that students in their elementary or middle school years are about 4 to 5 months behind in their academic careers.</p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+{% endblock %}
+
+  </body>
+</html>
