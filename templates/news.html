@@ -1,3 +1,5 @@
+{% extends "layout.html" %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -11,7 +13,7 @@
     {% block style %}
     <link href="static/css/style.css" rel="stylesheet" type="text/css" />
     {% endblock %}
-    
+
   </head>
   <body>
     {% block scripts %}
@@ -30,35 +32,48 @@
 <br>
 
 {% block content %}
-<!-- News 1 -->
+<div class="header">
+  <h2>Blog Name</h2>
+</div>
+
 <div class="row">
-<div class="column">
-<div class="content_img">
-<a href="https://www.nytimes.com/2021/07/27/us/covid-students-progress-at-home-learning.html">
- <img src='assets/legos.webp' width='100%' height='100%'>
- </a>
- <div>click here to read an article from the New York Times to learn more about how students are falling behind in result on the pandemic.</div>
-</div>
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Dec 7, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div><br>
+      <div class="fakeimg">Image</div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
 </div>
 
-<!-- News 2 -->
-<div class="column">
-<div class="content_img">
-<a href="https://www.hrw.org/report/2021/05/17/years-dont-wait-them/increased-inequalities-childrens-right-education-due-covid">
- <img src='assets/rainbow.webp' width='100%' height='100%'>
- </a>
- <div>click here to read a Human Rights Watch article about the increased inequalities in school in result of covid-19, since most of the public schools closed.</div>
-</div>
-</div>
-
-<!-- News 3 -->
-<div class="column">
-<div class="content_img">
-<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7444649/">
- <img src='assets/pencils.webp' width='100%' height='100%'>
- </a>
- <div>click here to read a NCBI article about the affect of covid-19 on the mental health of children and adolescents.</div>
-</div>
+<div class="footer">
+  <h2>Footer</h2>
 </div>
 {% endblock %}
 

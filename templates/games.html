@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Leading the way</title>
+
+    {% block style %}
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    {% endblock %}
+
+  </head>
+  <body>
+    {% block scripts %}
+    <script src="static/js/script.js"></script>
+    {% endblock %}
+
+    <br>
+
+<div id="container">
+    <button id="btn" onclick="generateFacts()">click me for a fact!</button>
+    <br>
+    <div id="here">
+    </div>
+  </div>
+
+<br>
+
+{% block content %}
+<!-- News 1 -->
+<div class="row">
+<div class="column">
+<div class="content_img">
+<a href="https://www.nytimes.com/2021/07/27/us/covid-students-progress-at-home-learning.html">
+ <img src='assets/legos.webp' width='100%' height='100%'>
+ </a>
+ <div>click here to read an article from the New York Times to learn more about how students are falling behind in result on the pandemic.</div>
+</div>
+</div>
+
+<!-- News 2 -->
+<div class="column">
+<div class="content_img">
+<a href="https://www.hrw.org/report/2021/05/17/years-dont-wait-them/increased-inequalities-childrens-right-education-due-covid">
+ <img src='assets/rainbow.webp' width='100%' height='100%'>
+ </a>
+ <div>click here to read a Human Rights Watch article about the increased inequalities in school in result of covid-19, since most of the public schools closed.</div>
+</div>
+</div>
+
+<!-- News 3 -->
+<div class="column">
+<div class="content_img">
+<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7444649/">
+ <img src='assets/pencils.webp' width='100%' height='100%'>
+ </a>
+ <div>click here to read a NCBI article about the affect of covid-19 on the mental health of children and adolescents.</div>
+</div>
+</div>
+{% endblock %}
+
+    <br>
+
+  </body>
+</html>

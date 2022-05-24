@@ -1,3 +1,5 @@
+{% extends "layout.html" %}
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,42 +10,34 @@
     <meta name="viewport" content="width=device-width">
     <title>Leading the way</title>
 
+    {% block styles %}
     <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    {% endblock %}
 
   </head>
   <body>
-    <script src="script.js"></script>
+    {% block scripts %}
+    <script src="static/js/script.js"></script>
+    {% endblock %}
 
-    <div class="topnav">
-      <a href="index.html">home.</a>
-      <a href="news.html">news.</a>
-      <a class="active" href="about.html">about.</a>
-      <a href="contact.html">contact.</a>
-      <a href="signup.html">get involved.</a>
-    </div>
-
+    {% block content %}
     <br>
 
     <h1>Our Mission</h1>
 
-    <p style="padding-left: 20%; padding-right: 20%";>To help younger students catch up since they missed some of their fundamental years of growth in school. This could pertain to tutoring, sociallizing safely with other students, and bringing activites like sports back into their life.</p>
+    <p style="padding-left: 20%; padding-right: 20%";>To help younger students learn how to code with access to mentors
+      and tutorials. Once you sign up there are availibites to tutors and many activities to help young students improve
+      their skills and find their love in coding.</p>
 
     <br>
 
-    <h3>Watch this video published by the science magazine to learn more about how children will be and have been affected by the pandemic. This was filmed during the beginning of lockdown.</h3>
+    <h3>Watch this video published the White House to show the importance of Computer Science in schools using the program
+      Hour of Code, where students are guided through learning how to build games and apps.</h3>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/nQ3TKGes99I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/qZfrDLLja-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <br>
+    {% endblock %}
 
-
-
-<div class="footer">
-     <h3>let's keep in touch</h3>
-    <p><a href="https://www.instagram.com/bel.amalia.m/?hl=en">
-    <img src="assets/instagramlogo.jpg" alt="instagram.com" width="20" height="20">
-    </a></p>
-    </div>
 
   </body>
 </html>
